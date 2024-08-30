@@ -1,0 +1,263 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+#bckgrndimg img {
+  width: 1519px;
+  height: 814px;
+  position: relative;
+}
+#bckgrndimg h3 {
+  width: 680px;
+  color: #4c250e;
+  position: absolute;
+  top: 150px;
+  left: 783px;
+  font-size: 87px;
+  word-wrap: break-word;
+  font-family: "Bodoni Moda", serif;
+  line-height: 85px;
+}
+#bckgrndimg {
+  animation: trans 3s;
+  width: 1448px;
+  position: relative;
+  height: 814px;
+}
+.logo {
+  position: relative;
+  width: 378px;
+  height: 368px;
+  cursor: pointer;
+  top: -935px;
+  left: 20px;
+}
+
+#whowe {
+  background-color: black;
+  position: relative;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  transition: all 1s;
+  height: 600px;
+  box-sizing: border-box;
+}
+
+#whowe:hover {
+  transform: scale(1.1);
+}
+
+#whowe h1 {
+  margin: 20px;
+  left: -31px;
+}
+
+#whowe p {
+  margin: 62px 85px 141px 649px;
+  font-size: 20px;
+  text-align: left;
+  color: #ffffff;
+  font-family: "Ysabeau", sans-serif;
+}
+#namastepic {
+  position: relative;
+  right: -76px;
+  top: -593px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 504px;
+  box-sizing: border-box;
+}
+.container {
+  position: relative;
+  width: 1200px;
+  height: 300px;
+  margin: 20px auto;
+  top: 0px;
+}
+
+.container .box {
+  position: relative;
+  width: calc(400px - 30px);
+  height: calc(300px - 30px);
+  float: left;
+  margin: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.container .box .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.container .box:hover .icon {
+  top: 20px;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.container .box .icon .fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  transition: 0.5s;
+  color: #fff;
+}
+
+.container .box:hover .icon .fa {
+  font-size: 40px;
+}
+
+.container .box .content {
+  position: absolute;
+  top: 100%;
+  height: calc(100% - 100px);
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.container .box:hover .content {
+  top: 100px;
+  opacity: 1;
+}
+
+.container .box .content h3 {
+  display: flex;
+  margin: 0 0 10px;
+  padding: 0;
+  color: #fff;
+  font-size: 24px;
+  align-items: center;
+}
+
+.container .box:nth-child(1) .icon {
+  background: #623b22;
+}
+
+.container .box:nth-child(1) {
+  background: #926c69;
+}
+
+.container .box:nth-child(2) .icon {
+  background: black;
+}
+
+.container .box:nth-child(2) {
+  background: rgb(40, 40, 40);
+}
+
+.container .box:nth-child(3) .icon {
+  background: #623b22;
+}
+
+.container .box:nth-child(3) {
+  background: #926c69;
+}
+.footer {
+  background-color: #000000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+}
+
+#lastlogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#lastlogo img {
+  margin: 6px;
+  width: 28px px;
+  height: 28px;
+}
+
+#lastlogo img.india {
+  transition: all;
+  width: 97px;
+  height: 90px;
+}
+
+#lastlogo img.india:hover {
+  transform: scale(1.1);
+}
+
+#lastlogo img.fb {
+  transition: all;
+}
+
+#lastlogo img.fb:hover {
+  transform: scale(1.1);
+}
+
+#lastlogo img.mail {
+  transition: all;
+}
+
+#lastlogo img.mail:hover {
+  transform: scale(1.1);
+}
+
+#lastlogo img.insta {
+  transition: all;
+}
+
+#lastlogo img.insta:hover {
+  transform: scale(1.1);
+}
+
+#lastlogo img.twitter {
+  transition: all;
+}
+
+#lastlogo img.twitter:hover {
+  transform: scale(1.1);
+}
+
+#footcontents {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footactivities {
+  display: flex;
+  cursor: pointer;
+  list-style: none;
+}
+
+.footactivities li {
+  margin: 10px;
+  padding: 10px;
+  transition: 0.5s ease;
+  align-self: center;
+}
+
+.footactivities li a {
+  color: #fff;
+  font-weight: 500;
+  font-family: "Poppins";
+  font-size: 1.2rem;
+  text-decoration: underline;
+}

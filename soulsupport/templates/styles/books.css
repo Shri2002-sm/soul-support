@@ -1,0 +1,124 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa; /* Light gray background */
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef); /* Gradient background */
+}
+
+#books {
+    color: green; 
+    padding: 50px 20px;
+    background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent white */
+    max-width: 1200px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+#books h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: green; 
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.book-category {
+    margin-bottom: 40px;
+    background-image: url('../images/books\ bg.jpg');
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+}
+
+.book-category h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #0097e6; /* Bright blue */
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.book-item {
+    background-color: #ffffff; /* White */
+    border: 1px solid #e0e0e0; /* Light gray */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.book-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.book-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.book-item h4 {
+    font-size: 1.3em;
+    margin: 15px 0;
+    color: #333; /* Dark gray */
+    transition: color 0.3s;
+}
+
+.book-item p {
+    color: #666; /* Medium gray */
+    font-size: 0.9em;
+}
+
+.book-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.book-item a:hover h4 {
+    color: #007BFF; /* Dark blue */
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+    #books {
+        padding: 30px 10px;
+        margin: 20px auto;
+    }
+
+    #books h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    .book-category h3 {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    .book-list {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .book-item {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .book-item h4 {
+        font-size: 1.2em;
+    }
+}

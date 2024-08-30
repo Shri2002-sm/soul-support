@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find a Therapist</title>
+  <link rel="stylesheet" href="styles/therapy.css">
+</head>
+<body>
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Find a Therapist</h1>
+      <p>Your journey to mental well-being starts here. Connect with experienced therapists today.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search for therapists...">
+    </div>
+
+    <!-- Filter Bar -->
+    <div class="filter-bar">
+      <div class="filter-category">
+        <label for="specialtyFilter">Specialty:</label>
+        <select id="specialtyFilter">
+          <option value="">All Specialties</option>
+          <option value="Clinical Psychologist">Clinical Psychologist</option>
+          <option value="Counselor">Counselor</option>
+          <option value="Psychiatrist">Psychiatrist</option>
+          <option value="Behavioral Therapist">Behavioral Therapist</option>
+          <option value="Child Psychologist">Child Psychologist</option>
+        </select>
+      </div>
+      <div class="filter-category">
+        <label for="locationFilter">Location:</label>
+        <select id="locationFilter">
+          <option value="">All Locations</option>
+          <option value="New York, NY">New York, NY</option>
+          <option value="Los Angeles, CA">Los Angeles, CA</option>
+          <option value="Pune, India">Pune, India</option>
+          <option value="Mumbai, India">Mumbai, India</option>
+          <option value="Delhi, India">Delhi, India</option>
+          <option value="Bengaluru, India">Bengaluru, India</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Therapist Cards -->
+    <div class="therapists-list" id="therapistsList">
+      <div class="therapist-card" data-specialty="Clinical Psychologist" data-location="Pune, India">
+        <img src="https://via.placeholder.com/300x200?text=Dr.+Meera+Kumar" alt="Dr. Meera Kumar">
+        <h2>Dr. Meera Kumar</h2>
+        <p><strong>Specialty:</strong> Clinical Psychologist</p>
+        <p><strong>Contact:</strong> <a href="mailto:meera.kumar@example.com">meera.kumar@example.com</a></p>
+        <p><strong>Phone:</strong> +911234567890</p>
+        <p><strong>Location:</strong> Pune, India</p>
+      </div>
+
+      <div class="therapist-card" data-specialty="Psychiatrist" data-location="Mumbai, India">
+        <img src="https://via.placeholder.com/300x200?text=Dr.+Amit+Deshmukh" alt="Dr. Amit Deshmukh">
+        <h2>Dr. Amit Deshmukh</h2>
+        <p><strong>Specialty:</strong> Psychiatrist</p>
+        <p><strong>Contact:</strong> <a href="mailto:amit.deshmukh@example.com">amit.deshmukh@example.com</a></p>
+        <p><strong>Phone:</strong> +919876543210</p>
+        <p><strong>Location:</strong> Mumbai, India</p>
+      </div>
+
+      <div class="therapist-card" data-specialty="Counselor" data-location="Delhi, India">
+        <img src="https://via.placeholder.com/300x200?text=Dr.+Sneha+Sharma" alt="Dr. Sneha Sharma">
+        <h2>Dr. Sneha Sharma</h2>
+        <p><strong>Specialty:</strong> Counselor</p>
+        <p><strong>Contact:</strong> <a href="mailto:sneha.sharma@example.com">sneha.sharma@example.com</a></p>
+        <p><strong>Phone:</strong> +911122334455</p>
+        <p><strong>Location:</strong> Delhi, India</p>
+      </div>
+
+      <div class="therapist-card" data-specialty="Behavioral Therapist" data-location="Bengaluru, India">
+        <img src="https://via.placeholder.com/300x200?text=Dr.+Ravi+Naidu" alt="Dr. Ravi Naidu">
+        <h2>Dr. Ravi Naidu</h2>
+        <p><strong>Specialty:</strong> Behavioral Therapist</p>
+        <p><strong>Contact:</strong> <a href="mailto:ravi.naidu@example.com">ravi.naidu@example.com</a></p>
+        <p><strong>Phone:</strong> +918023456789</p>
+        <p><strong>Location:</strong> Bengaluru, India</p>
+      </div>
+
+      <div class="therapist-card" data-specialty="Child Psychologist" data-location="Pune, India">
+        <img src="https://via.placeholder.com/300x200?text=Dr.+Aishwarya+Patil" alt="Dr. Aishwarya Patil">
+        <h2>Dr. Aishwarya Patil</h2>
+        <p><strong>Specialty:</strong> Child Psychologist</p>
+        <p><strong>Contact:</strong> <a href="mailto:aishwarya.patil@example.com">aishwarya.patil@example.com</a></p>
+        <p><strong>Phone:</strong> +912345678900</p>
+        <p><strong>Location:</strong> Pune, India</p>
+      </div>
+    </div>
+
+    <!-- Specialties Section -->
+    <div class="specialties">
+      <h2>Our Specialties</h2>
+      <div class="specialty-item">
+        <img src="./images/Clinical Psychologist.jpg" alt="Clinical Psychologist">
+        <h3>Clinical Psychologist</h3>
+        <p>Expert in diagnosing and treating mental health issues through therapy and counseling.</p>
+      </div>
+      <div class="specialty-item">
+        <img src="./images/counsellor.jpg" alt="Counselor">
+        <h3>Counselor</h3>
+        <p>Provides guidance and support for dealing with personal and emotional challenges.</p>
+      </div>
+      <div class="specialty-item">
+        <img src="./images/Psychiatrist.jpg" alt="Psychiatrist">
+        <h3>Psychiatrist</h3>
+        <p>Specializes in the diagnosis, treatment, and prevention of mental health disorders.</p>
+      </div>
+      <div class="specialty-item">
+        <img src="./images/behavioural therapist.jpg" alt="Behavioral Therapist">
+        <h3>Behavioral Therapist</h3>
+        <p>Focuses on modifying harmful behaviors through behavioral therapy techniques.</p>
+      </div>
+      <div class="specialty-item">
+        <img src="./images/Child Psychologist.jpg" alt="Child Psychologist">
+        <h3>Child Psychologist</h3>
+        <p>Specializes in the psychological development and treatment of children.</p>
+      </div>
+    </div>
+
+    <!-- Locations Section -->
+    <div class="locations">
+      <h2>Locations We Serve</h2>
+      <div class="location-item">
+        <img src="./images/mumbai.jpg" alt="Pune">
+        <h3>Pune, India</h3>
+        <p>Providing therapy services across various areas in Pune.</p>
+      </div>
+      <div class="location-item">
+        <img src="https://via.placeholder.com/150x150?text=Mumbai" alt="Mumbai">
+        <h3>Mumbai, India</h3>
+        <p>Offering support in multiple regions throughout Mumbai.</p>
+      </div>
+      <div class="location-item">
+        <img src="https://via.placeholder.com/150x150?text=Delhi" alt="Delhi">
+        <h3>Delhi, India</h3>
+        <p>Connecting you with therapists across the capital city of Delhi.</p>
+      </div>
+      <div class="location-item">
+        <img src="https://via.placeholder.com/150x150?text=Bengaluru" alt="Bengaluru">
+        <h3>Bengaluru, India</h3>
+        <p>Comprehensive therapy services in various neighborhoods of Bengaluru.</p>
+      </div>
+      <div class="location-item">
+        <img src="https://via.placeholder.com/150x150?text=Hyderabad" alt="Hyderabad">
+        <h3>Hyderabad, India</h3>
+        <p>Extensive network of therapists available in Hyderabad.</p>
+      </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="testimonials">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonial-card">
+        <p>"I found the perfect therapist for my needs on this platform. The service is exceptional!"</p>
+        <p>- Ananya, Pune</p>
+      </div>
+      <div class="testimonial-card">
+        <p>"This platform made it easy for me to connect with a counselor who truly understands me."</p>
+        <p>- Raj, Mumbai</p>
+      </div>
+      <div class="testimonial-card">
+        <p>"The support I received has been life-changing. I highly recommend this service."</p>
+        <p>- Shreya, Delhi</p>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="cta">
+      <a href="#" class="cta-button">Book a Session Now</a>
+    </div>
+  </div>
+
+  <script src="scripts/therapy.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "expess": "^0.0.1-security",
+    "express": "^4.19.2",
+    "hbs": "^4.2.0",
+    "mongodb": "^6.8.0",
+    "mongoose": "^7.7.0",
+    "mongose": "^0.0.2-security",
+    "pg": "^8.12.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "name": "soulsupport",
+  "description": "SOCIAL MEDIA FOR MENTAL HEALTH BECAUSE IT'S OK TO NOT BE OKAY !!",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

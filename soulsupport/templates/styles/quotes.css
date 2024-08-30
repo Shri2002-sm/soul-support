@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+body {
+  margin: 0;
+  background: url(https://cdn.pixabay.com/photo/2021/01/23/13/01/hills-5942468_640.jpg);
+  background-size: cover;
+
+  /* background: url(https://cdn.pixabay.com/photo/2017/08/02/14/26/winter-landscape-2571788_640.jpg);
+    background-size: cover; */
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  color: #fefefe;
+}
+
+.container {
+  position: relative;
+  width: 320px;
+  margin: 100px auto 0 auto;
+  perspective: 1000px;
+}
+
+.carousel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: rotate360 30s infinite forwards linear;
+}
+
+.image {
+  position: absolute;
+  width: 300px;
+  height: 187px;
+  top: 20px;
+  left: 10px;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+
+span {
+  padding: 20px;
+  margin: auto;
+  font-size: 22px;
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+.image:nth-child(1) {
+  background-image: url(https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171_960_720.jpg);
+  transform: rotateY(0deg) translateZ(430px);
+}
+
+.image:nth-child(2) {
+  background-image: url(https://cdn.pixabay.com/photo/2017/02/08/17/24/fantasy-2049567_640.jpg);
+  transform: rotateY(40deg) translateZ(430px);
+}
+
+.image:nth-child(3) {
+  background-image: url(https://cdn.pixabay.com/photo/2018/01/12/14/24/night-3078326_640.jpg);
+  transform: rotateY(80deg) translateZ(430px);
+}
+
+.image:nth-child(4) {
+  background-image: url(https://cdn.pixabay.com/photo/2018/05/30/00/24/thunderstorm-3440450_640.jpg);
+  transform: rotateY(120deg) translateZ(430px);
+}
+
+.image:nth-child(5) {
+  background-image: url(https://cdn.pixabay.com/photo/2016/11/14/04/36/boy-1822614_640.jpg);
+  transform: rotateY(160deg) translateZ(430px);
+}
+
+.image:nth-child(6) {
+  background-image: url(https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547_640.jpg);
+  transform: rotateY(200deg) translateZ(430px);
+}
+
+.image:nth-child(7) {
+  background-image: url(https://cdn.pixabay.com/photo/2018/08/21/23/29/forest-3622519_640.jpg);
+  transform: rotateY(240deg) translateZ(430px);
+}
+
+.image:nth-child(8) {
+  background-image: url(https://cdn.pixabay.com/photo/2018/02/13/23/41/nature-3151869_640.jpg);
+  transform: rotateY(280deg) translateZ(430px);
+}
+
+.image:nth-child(9) {
+  background-image: url(https://cdn.pixabay.com/photo/2015/04/19/08/33/flower-729512_640.jpg);
+  transform: rotateY(320deg) translateZ(430px);
+}

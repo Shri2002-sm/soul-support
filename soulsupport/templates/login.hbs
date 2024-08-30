@@ -1,0 +1,291 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mental Health</title>
+    <link rel="stylesheet" href="./styles/login.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+
+    <header class="header">
+      <!--  Nav Bar -->
+
+      <nav class="navbar">
+        <a href="home">Home</a>
+        <a href="quotes">Quotes</a>
+      </nav>
+
+      <!-- form -->
+
+      <!-- <form action="#" class="search-bar">
+        <input type="text" placeholder="search" />
+        <button type="submit"><i class="bx bx-search"></i></button>
+      </form> -->
+    </header>
+
+    <div class="background"></div>
+
+    <div class="container">
+      <div class="content">
+        <h2 class="logo">
+          <i class="bx bxs-brain"> </i>
+          Mind Space
+        </h2>
+
+        <div class="text-sci">
+          <h2>Welcome!<br /><span>Mind Space</span></h2>
+          <p>A one stop platform to tackle all your mental problems !!</p>
+
+          <div class="social-icons">
+            <a href="#">
+              <i class="bx bxl-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="bx bxl-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="bx bxl-linkedin-square"></i>
+            </a>
+            <a href="#">
+              <i class="bx bxl-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="logreg-box">
+        <div class="form-box login">
+          <form action="/login" method="post">
+            <h2>Sign In</h2>
+
+            <div class="input-box">
+              <span class="icon"><i class="bx bx-envelope"></i></span>
+              <input type="email" name="email" />
+              <label>Email</label>
+            </div>
+
+            <div class="input-box">
+              <span class="icon"><i class="bx bx-lock-alt"></i></span>
+              <input type="password" name="password" />
+              <label>Password</label>
+            </div>
+
+            <div class="remember-forget">
+              <label><input type="checkbox" />Remember Me</label>
+              <a href="#">Forget Password?</a>
+            </div>
+
+            <button type="submit" class="btn">Sign in</button>
+
+            <div class="login-register">
+              <p>
+                Don't have an account?
+                <a href="signup">Sign up</a>
+              </p>
+            </div>
+          </form>
+        </div>
+
+        <!-- nextttttttttt -->
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
+
+{{!-- <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mind Space</title>
+    <link rel="stylesheet" href="./styles/login.css" />
+  </head>
+  {{! <style>
+    body { background-image:
+    url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg');
+    background-size: cover; background-repeat: no-repeat; font-family: Arial,
+    sans-serif; margin: 0; padding: 0; } h2 { text-align: center; color:
+    #1ab8c4cc; } .login { width: 300px; margin: 0 auto; padding: 20px;
+    background-color: #fff; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0,
+    0, 0.1); } .login input[type="text"], .login input[type="password"] { width:
+    100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc;
+    border-radius: 3px; } .login input[type="submit"] { width: 100%; padding:
+    10px; background-color: #333; color: #1ab8c4cc; border: none; border-radius:
+    3px; cursor: pointer; } .signup { text-align: center; margin-top: 20px; }
+    .signup a { color: #1ab8c4cc; text-decoration: none; }
+  </style> }}
+
+  <body>
+    <h2>Login</h2>
+    <div class="login">
+      <form action="/login" method="post">
+        {{! <input type="text" name="name" placeholder="name" /> }}
+        <input type="text" name="email" placeholder="email" />
+        <input type="password" name="password" placeholder="password" />
+        <input type="submit" />
+      </form>
+    </div>
+    <div class="signup">
+      <a href="signup">Don't have an account ? SignUp NOW !!</a>
+    </div>
+  </body>
+</html> --}}
+{{!-- <html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mind Space</title>
+    {{!
+    <link rel="stylesheet" href="./stylesheet/login.css" /> }}
+    {{! <link rel="stylesheet" type="text/css" href="../public/login.css" /> }}
+    <link rel="stylesheet" href="../public/login.css" type="text/css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+
+    <header class="header">
+      <!-- Nav Bar -->
+
+      <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </nav>
+
+      <!-- form -->
+
+      <!-- <form action="#" class="search-bar" method="post"> -->
+      <!-- <form action="#" class="search-bar">
+            <input type="text" placeholder="search" />
+            <button type="submit"><i class="bx bx-search"></i></button>
+        </form> -->
+    </header>
+
+    <div class="background"></div>
+
+    <div class="container">
+      <div class="content">
+        <h2 class="logo">
+          <i class="bx bxs-brain"> </i>
+          YOUMATTER
+        </h2>
+
+        <div class="text-sci">
+          <h2>Welcome!<br /></h2>
+          <p>This is where YOU can find the best YOU !!.</p>
+
+          <div class="social-icons">
+            <a href="#">
+              <i class="bx bxl-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="bx bxl-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="bx bxl-linkedin-square"></i>
+            </a>
+            <a href="#">
+              <i class="bx bxl-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="logreg-box">
+        <div class="form-box login">
+          <form action="#">
+            <h2>Sign In</h2>
+
+            <div class="input-box">
+              <span class="icon"><i class="bx bx-envelope"></i></span>
+              <input type="email" name="email" />
+              <label>Email</label>
+            </div>
+
+            <div class="input-box">
+              <span class="icon"><i class="bx bx-lock-alt"></i></span>
+              <input type="password" name="password" />
+              <label>Password</label>
+            </div>
+
+            <div class="remember-forget">
+              <label><input type="checkbox" />Remember Me</label>
+              <a href="#">Forget Password?</a>
+            </div>
+
+            <button type="submit" class="btn">Sign in</button>
+
+            <div class="login-register">
+              <p>
+                Don't have an account?<a href="#" class="register-link">Sign Up</a>
+                <!-- Sign Up</a> -->
+              </p>
+            </div>
+          </form>
+        </div>
+
+        <!-- nextttttttttt -->
+
+        <div class="form-box register">
+          <form action="/login" method="post">
+            <h2>Sign Up</h2>
+
+            <div class="input-box">
+              <span class="icon"><i class="bx bxs-user"></i></span>
+              <input type="text" name="fullname" />
+              <label>Name</label>
+            </div>
+
+            <div class="input-box">
+              <span class="icon"><i class="bx bx-envelope"></i></span>
+              <input type="email" name="email" />
+              <label>Email</label>
+            </div>
+
+            <div class="input-box">
+              <span class="icon"><i class="bx bx-lock-alt"></i></span>
+              <input type="password" name="password" />
+              <label>Password</label>
+            </div>
+
+            <div class="remember-forget">
+              <label><input type="checkbox" />I agree to the terms & conditions</label>
+              <!-- <a href="#">Forget Password?</a> -->
+            </div>
+
+            <button type="submit" class="btn"><a href="login">Sign Up</a></button>
+            <!-- <button><input type="submit" value="submit" id="submit"></button> -->
+
+            <div class="login-register">
+              <p>
+                Already have an account?
+                <a href="#" class="login-link">Sign in</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    {{! <script src="../public/login.js"></script> }}
+    <script src="../public/login.js" type="text/javascript"></script>
+
+  </body>
+
+</html> --}}

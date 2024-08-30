@@ -1,0 +1,320 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll on small screens */
+}
+
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  height: 70px;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#logo img {
+  width: 120px;
+  height: 70px;
+}
+
+#navcontents {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navlist {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+}
+
+.navlist li.one {
+  color: #21343f;
+  margin: 10px;
+  padding: 10px;
+  transition: 0.5s ease;
+  align-self: center;
+}
+
+button {
+  width: 174px;
+  padding: 6px;
+  background-color: #2f5770;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  font-weight: 1000;
+  font-size: 125%;
+  margin: 8px;
+}
+
+button:hover {
+  background-color: #21343f;
+  cursor: pointer;
+}
+
+#backgroung_img img {
+  align-items: center;
+  height: 600px;
+  width: 100%;
+  padding-left: 60px;
+  animation: trans 3s;
+  block-size: 100%;
+}
+
+#two h2 {
+  color: #2f5770;
+  position: relative;
+  font-size: 41px;
+  text-align: center;
+  font-family: "Crimson Text", serif;
+}
+
+#two h3 {
+  color: #7199b4;
+  position: relative;
+  font-size: 26px;
+  text-align: center;
+}
+
+#container {
+  transition: all 1s;
+  top: -200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  width: 100%;
+  max-width: 33%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.box img {
+  width: 70px;
+  height: 70px;
+  margin: 27px;
+}
+
+.box h2 {
+  font-size: 36px;
+  color: #2f5770;
+}
+
+.box p {
+  margin: 10px;
+  text-align: center;
+}
+
+#about {
+  background-color: #2f5770;
+  color: white;
+  padding: 30px;
+  position: relative;
+  text-align: center;
+  top: 32px;
+  transition: all 1s;
+}
+
+#about:hover {
+  transform: scale(1.1);
+}
+
+#about h1 {
+  margin: 20px;
+}
+
+#about p {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 20px;
+}
+
+#about span.butt {
+  width: 174px;
+  padding: 12px;
+  background-color: #2f5770;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid white;
+  font-weight: 1000;
+  font-size: 125%;
+  top: -20px;
+  transition: all 0.3s ease-in 0s;
+}
+
+#about span.butt:hover {
+  background-color: #92b2c7;
+  color: #2f5770;
+}
+
+#namaste {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+#namaste h2 {
+  color: #7199b4;
+  font-size: 36px;
+  margin: 20px;
+  font-family: "Playfair Display", serif;
+}
+
+#namaste p {
+  color: #2f5770;
+  font-size: 18px;
+  font-family: "Mukta", sans-serif;
+}
+
+#namastepic img {
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+#offer {
+  background-color: #e8e8e8;
+  color: #7199b4;
+  padding: 30px;
+  text-align: center;
+  transition: all 1s;
+}
+
+#offer:hover {
+  transform: scale(1.1);
+}
+
+#offer h1 {
+  color: #2f5770;
+  margin: 20px;
+}
+
+#offer p {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 20px;
+}
+
+.footer {
+  background-color: #2f5770;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+}
+
+#footcontents {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footactivities {
+  display: flex;
+  cursor: pointer;
+  list-style: none;
+}
+
+.footactivities li {
+  margin: 10px;
+  padding: 10px;
+  transition: 0.5s ease;
+  align-self: center;
+}
+
+.footactivities li a {
+  color: #fff;
+  font-weight: 500;
+  font-family: "Poppins";
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  html, body {
+    width: 1200px; /* Lock the width to maintain desktop layout */
+    overflow-x: scroll; /* Allow horizontal scrolling */
+  }
+
+  .navbar {
+    flex-direction: row;
+    justify-content: space-around;
+    height: 70px;
+  }
+
+  .navlist {
+    flex-direction: row;
+    align-items: center;
+    padding: 25px;
+  }
+
+  .navlist li.one {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  button {
+    width: 174px;
+    margin: 8px;
+    font-size: 125%;
+  }
+
+  #backgroung_img img {
+    height: 600px;
+    width: 100%;
+    padding-left: 60px;
+  }
+
+  #container {
+    top: -200px;
+    flex-wrap: wrap;
+  }
+
+  .box {
+    max-width: 33%;
+  }
+
+  #about p,
+  #offer p {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  #namaste h2 {
+    font-size: 36px;
+  }
+
+  #namaste p {
+    font-size: 18px;
+  }
+
+  #namastepic img {
+    width: 100%;
+    max-width: 450px;
+  }
+}  

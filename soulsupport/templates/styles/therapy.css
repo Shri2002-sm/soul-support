@@ -1,0 +1,248 @@
+body {
+  background-color: #f0f8ff; /* Light blue background for the entire page */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  background-image: url('https://img.freepik.com/free-photo/family-therapy-psychologist-office_23-2149175174.jpg?ga=GA1.1.424580486.1724000700&semt=ais_hybrid');
+  background-size: cover;
+  background-position: center center;
+  height: 600px; /* Adjust the height to show more of the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Slightly less dark overlay for better visibility */
+  z-index: 1;
+}
+
+.hero-text {
+  color: white;
+  text-align: center;
+  z-index: 2;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 80%; /* Ensure the text doesn't stretch too wide on large screens */
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 300px; /* Reduce height on smaller screens */
+    background-position: center top; /* Adjust background position for smaller screens */
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #e6f7f5; /* Light mint green for a calming effect */
+  border-radius: 10px; /* Rounded corners for a softer look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.search-bar, .filter-bar {
+  background-color: #ffffff; /* White background for contrast */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.filter-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-category {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-category label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.filter-category select {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.therapists-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.therapist-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+}
+
+.therapist-card:hover {
+  transform: translateY(-10px);
+}
+
+.therapist-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Updated Our Specialties section */
+.specialties {
+  margin-top: 50px;
+  text-align: center;
+  background-color: #e0f7fa; /* Light cyan background */
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.specialties h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #00796b; /* Teal color for the heading */
+}
+
+.specialty-item {
+  display: inline-block;
+  margin: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.specialty-item:hover {
+  transform: scale(1.1);
+}
+
+.specialty-item img {
+  border-radius: 50%;
+  margin-bottom: 15px;
+  width: 100px; /* Set a fixed width for the icons */
+  height: 100px; /* Set a fixed height for the icons */
+  background-color: #ffeb3b; /* Yellow background for icons */
+  padding: 20px;
+}
+
+/* Specific image for Clinical Psychologist */
+.specialty-item.clinical-psychologist img {
+  background-image: url('https://img.freepik.com/premium-vector/south-asian-female-psychologist-her-50s-counseling-patient_1238364-91759.jpg?w=1380');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  width: 150px; /* Adjusted size for a better fit */
+  height: 150px;
+}
+
+.specialty-item h3 {
+  font-size: 1.2rem;
+  color: #004d40; /* Darker teal for the specialty names */
+}
+
+/* Updated Locations We Serve section */
+.locations {
+  margin-top: 50px;
+  text-align: center;
+  background-color: #ffebee; /* Light pink background */
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.locations h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #d32f2f; /* Dark red color for the heading */
+}
+
+.location-item {
+  display: inline-block;
+  margin: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.location-item:hover {
+  transform: scale(1.1);
+}
+
+.location-item img {
+  border-radius: 50%;
+  margin-bottom: 15px;
+  width: 100px; /* Set a fixed width for the icons */
+  height: 100px; /* Set a fixed height for the icons */
+  background-color: #4caf50; /* Green background for icons */
+  padding: 20px;
+}
+
+.location-item h3 {
+  font-size: 1.2rem;
+  color: #b71c1c; /* Darker red for the location names */
+}
+
+.testimonials {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.testimonial-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  display: inline-block;
+  text-align: left;
+  max-width: 500px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #008cba;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #005f7f;
+}
