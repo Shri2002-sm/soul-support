@@ -15,89 +15,43 @@
   </div>
 
   <div class="container">
-    <!-- Search Bar -->
-    <div class="search-bar">
-      <input type="text" id="searchInput" placeholder="Search for therapists...">
-    </div>
-
-    <!-- Filter Bar -->
-    <div class="filter-bar">
-      <div class="filter-category">
-        <label for="specialtyFilter">Specialty:</label>
-        <select id="specialtyFilter">
-          <option value="">All Specialties</option>
-          <option value="Clinical Psychologist">Clinical Psychologist</option>
-          <option value="Counselor">Counselor</option>
-          <option value="Psychiatrist">Psychiatrist</option>
-          <option value="Behavioral Therapist">Behavioral Therapist</option>
-          <option value="Child Psychologist">Child Psychologist</option>
-        </select>
-      </div>
-      <div class="filter-category">
-        <label for="locationFilter">Location:</label>
-        <select id="locationFilter">
-          <option value="">All Locations</option>
-          <option value="New York, NY">New York, NY</option>
-          <option value="Los Angeles, CA">Los Angeles, CA</option>
-          <option value="Pune, India">Pune, India</option>
-          <option value="Mumbai, India">Mumbai, India</option>
-          <option value="Delhi, India">Delhi, India</option>
-          <option value="Bengaluru, India">Bengaluru, India</option>
-        </select>
-      </div>
-    </div>
-
     <!-- Therapist Cards -->
     <div class="therapists-list" id="therapistsList">
-      <div class="therapist-card" data-specialty="Clinical Psychologist" data-location="Pune, India">
-        <img src="https://via.placeholder.com/300x200?text=Dr.+Meera+Kumar" alt="Dr. Meera Kumar">
-        <h2>Dr. Meera Kumar</h2>
-        <p><strong>Specialty:</strong> Clinical Psychologist</p>
-        <p><strong>Contact:</strong> <a href="mailto:meera.kumar@example.com">meera.kumar@example.com</a></p>
-        <p><strong>Phone:</strong> +911234567890</p>
-        <p><strong>Location:</strong> Pune, India</p>
+      <div class="therapist-card">
+        <img src="./images/manovishkar.jpg" alt="Dr. Meera Kumar">
+        <h2>Dr. Amol D. Chaugule</h2>
+        <p><strong>Specialty:</strong> Consulting Psychologist, Hypnotherapist, Rehabilitation Counselor</p>
+        <p><strong>Clinic:</strong> MANOVISHIKAR Mind Care Center</p>
+        <p><strong>Contact:</strong> <a href="mailto:meera.kumar@example.com">manovishar@gmail.com</a></p>
+        <p><strong>Phone:</strong> ++91 8669065990</p>
+        <p><strong>Location:</strong>   Shop No. 312, 3rd Floor, Krishnakunj Complex, Near Lifeline Hospital, Kesnand Phata, Pune-Nagar Road, Wagholi, Pune 412207</p>
       </div>
 
-      <div class="therapist-card" data-specialty="Psychiatrist" data-location="Mumbai, India">
-        <img src="https://via.placeholder.com/300x200?text=Dr.+Amit+Deshmukh" alt="Dr. Amit Deshmukh">
-        <h2>Dr. Amit Deshmukh</h2>
+      <div class="therapist-card">    
+        <img src="./images/Dr.Anjendra Targe.jpg" alt="Dr. Amit Deshmukh">
+        <h2>Dr. Anjendra Targe</h2>
+        <p><strong>Specialty:</strong> Psychiatry</p>
+         <p><strong>Clinic:</strong> Psychiatry Clinic</p>
+        <p><strong>Contact:</strong> <a href="mailto:amit.deshmukh@example.com">askdranjendra@gmail.com</a></p>
+        <p><strong>Phone:</strong> +91 9619 3285 31</p>
+        <p><strong>Location:</strong> 305, 3rd Floor, 'Prospero' D.P. Farm Road, Kharadi, Pune - 14</p>
+      </div>
+
+      <div class="therapist-card">
+        <img src="./images/heal and bloom centre.jpg" alt="Dr. Sneha Sharma">
+        <h2>Dr. Ruth Fernandes</h2>
         <p><strong>Specialty:</strong> Psychiatrist</p>
-        <p><strong>Contact:</strong> <a href="mailto:amit.deshmukh@example.com">amit.deshmukh@example.com</a></p>
-        <p><strong>Phone:</strong> +919876543210</p>
-        <p><strong>Location:</strong> Mumbai, India</p>
-      </div>
+         <p><strong>Clinic:</strong> HEAL & BLOOM Centre</p>
+        <p><strong>Contact:</strong> <a href="mailto:sneha.sharma@example.com">medicodream@gmail.com</a>  </p>
+        <p><strong>Phone:</strong>+91 7066151000</p>
+        <p><strong>Location:</strong> 21, 3rd Floor, B Wing, Fountain Road Downtown City Vista, Kharadi, Pune</p>
+      </div>  
 
-      <div class="therapist-card" data-specialty="Counselor" data-location="Delhi, India">
-        <img src="https://via.placeholder.com/300x200?text=Dr.+Sneha+Sharma" alt="Dr. Sneha Sharma">
-        <h2>Dr. Sneha Sharma</h2>
-        <p><strong>Specialty:</strong> Counselor</p>
-        <p><strong>Contact:</strong> <a href="mailto:sneha.sharma@example.com">sneha.sharma@example.com</a></p>
-        <p><strong>Phone:</strong> +911122334455</p>
-        <p><strong>Location:</strong> Delhi, India</p>
-      </div>
-
-      <div class="therapist-card" data-specialty="Behavioral Therapist" data-location="Bengaluru, India">
-        <img src="https://via.placeholder.com/300x200?text=Dr.+Ravi+Naidu" alt="Dr. Ravi Naidu">
-        <h2>Dr. Ravi Naidu</h2>
-        <p><strong>Specialty:</strong> Behavioral Therapist</p>
-        <p><strong>Contact:</strong> <a href="mailto:ravi.naidu@example.com">ravi.naidu@example.com</a></p>
-        <p><strong>Phone:</strong> +918023456789</p>
-        <p><strong>Location:</strong> Bengaluru, India</p>
-      </div>
-
-      <div class="therapist-card" data-specialty="Child Psychologist" data-location="Pune, India">
-        <img src="https://via.placeholder.com/300x200?text=Dr.+Aishwarya+Patil" alt="Dr. Aishwarya Patil">
-        <h2>Dr. Aishwarya Patil</h2>
-        <p><strong>Specialty:</strong> Child Psychologist</p>
-        <p><strong>Contact:</strong> <a href="mailto:aishwarya.patil@example.com">aishwarya.patil@example.com</a></p>
-        <p><strong>Phone:</strong> +912345678900</p>
-        <p><strong>Location:</strong> Pune, India</p>
-      </div>
-    </div>
+    
 
     <!-- Specialties Section -->
     <div class="specialties">
-      <h2>Our Specialties</h2>
+      <h2> Specialties</h2>
       <div class="specialty-item">
         <img src="./images/Clinical Psychologist.jpg" alt="Clinical Psychologist">
         <h3>Clinical Psychologist</h3>
@@ -126,7 +80,7 @@
     </div>
 
     <!-- Locations Section -->
-    <div class="locations">
+    <!--<div class="locations">
       <h2>Locations We Serve</h2>
       <div class="location-item">
         <img src="./images/mumbai.jpg" alt="Pune">
@@ -153,10 +107,10 @@
         <h3>Hyderabad, India</h3>
         <p>Extensive network of therapists available in Hyderabad.</p>
       </div>
-    </div>
+    </div> -->
 
     <!-- Testimonials Section -->
-    <div class="testimonials">
+    <!-- <div class="testimonials">
       <h2>What Our Clients Say</h2>
       <div class="testimonial-card">
         <p>"I found the perfect therapist for my needs on this platform. The service is exceptional!"</p>
@@ -171,12 +125,7 @@
         <p>- Shreya, Delhi</p>
       </div>
     </div>
-
-    <!-- Call to Action -->
-    <div class="cta">
-      <a href="#" class="cta-button">Book a Session Now</a>
-    </div>
-  </div>
+  </div> -->
 
   <script src="scripts/therapy.js"></script>
 </body>

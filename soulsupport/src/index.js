@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: false }))
 app.use("/pdf", express.static(path.join(__dirname, "pdf")));
 
 app.get("/", (req, res) => {
-  res.render("home")
+  res.render("signup")
 })
 
 app.get("/signup", (req, res) => {
@@ -59,18 +59,7 @@ app.get("/therapy", (req, res) => {
   res.render("therapy");
 });
 
-app.get("/chatbot", (req, res) => {
-  res.render("chatbot");
-});
 
-
-
-
-const responses = {
-  "hello": "Hi there! How can I assist you today?",
-  "therapy": "We offer various therapy services. Would you like to know more?",
-  "default": "I'm sorry, I didn't understand that. Could you please rephrase?"
-};
 
 app.post("/signup", async (req, res) => {
   const data = {

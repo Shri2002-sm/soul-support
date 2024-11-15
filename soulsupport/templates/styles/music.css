@@ -1,19 +1,20 @@
 /* Global Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background-image: url('../images/Background.jpg');
-    background-size: cover; /* Ensure the image covers the entire screen */
+    background-image: url('../images/music3.jpg');
+    background-size:contain; /* Ensure the image covers the entire screen */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
     background-attachment: fixed; /* Fix the background image in place */
     margin: 0;
     padding: 0;
     color: #fff;
+    background-size: 100%;
 }
 
 header {
     background-color: rgba(0, 0, 0, 0.7);
-    color: #ffd166;
+    color:white;
     padding: 20px 0;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -51,6 +52,7 @@ nav ul li a:hover {
 }
 
 #music {
+    
     padding: 40px 20px;
     background-color: rgba(0, 0, 0, 0.6);
     max-width: 1200px;
@@ -60,7 +62,7 @@ nav ul li a:hover {
 }
 
 h2 {
-    color: #ffd166;
+    color: #ffffff;
     text-align: center;
     margin-top: 0;
     font-family: 'Montserrat', sans-serif;
@@ -130,11 +132,11 @@ audio {
     width: 100%;
     margin-top: 10px;
     border-radius: 5px;
-    background-color: #ffd166;
+    background-color: transparent;
 }
 
 audio::-webkit-media-controls-panel {
-    background-color: #ffd166;
+    background-color:transparent;
 }
 
 audio::-webkit-media-controls-play-button {

@@ -4,9 +4,6 @@ body {
   margin: 0;
   background: url(https://cdn.pixabay.com/photo/2021/01/23/13/01/hills-5942468_640.jpg);
   background-size: cover;
-
-  /* background: url(https://cdn.pixabay.com/photo/2017/08/02/14/26/winter-landscape-2571788_640.jpg);
-    background-size: cover; */
   text-align: center;
   font-family: "Playfair Display", serif;
   color: #fefefe;
@@ -97,4 +94,53 @@ span {
 .image:nth-child(9) {
   background-image: url(https://cdn.pixabay.com/photo/2015/04/19/08/33/flower-729512_640.jpg);
   transform: rotateY(320deg) translateZ(430px);
+}
+
+/* Mobile and small screen adjustments (below 600px) */
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+    margin: 50px auto 0 auto;
+  }
+
+  .image {
+    width: 90%; /* Adjust image width to fit mobile screen */
+    height: auto; /* Maintain aspect ratio */
+    top: 10px; /* Reduce top margin */
+    left: 5%; /* Adjust positioning */
+  }
+
+  span {
+    font-size: 16px; /* Smaller font for mobile */
+    padding: 10px;
+  }
+
+  @keyframes rotate360 {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(-360deg);
+    }
+  }
+}
+
+/* Larger screens (above 600px) */
+@media only screen and (min-width: 601px) {
+  .container {
+    width: 320px;
+    margin: 100px auto 0 auto;
+  }
+
+  .image {
+    width: 300px; /* Restore original size */
+    height: 187px;
+    top: 20px;
+    left: 10px;
+  }
+
+  span {
+    font-size: 22px; /* Restore original font size */
+    padding: 20px;
+  }
 }

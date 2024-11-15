@@ -22,17 +22,17 @@
         <div id="navcontents">
             <ul class="navlist">
                 <li class="one">
-                    <a href="knowmore" style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-style: normal; color: rgb(175, 187, 144); "><b>WHO WE ARE</b> </a>
+                    <a href="#about" style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-style: normal; color: rgb(175, 187, 144); "><b>WHO WE ARE</b> </a>
                 </li>
                 <li class="one">
                     <a href="#offer" style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-style: normal; color: rgb(175, 187, 144); "><b>WHAT WE OFFER<b></a>
                 </li>
-                <a href="books" ><button>Book</button></a>
+                <a href="books" style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;" ><button>Book</button></a>
                 <a href="music" ><button>Music</button></a>
                 <a href="quotes" class="cta"><button>QUOTES</button></a>
                 <a href="therapy" ><button>Therapy</button></a>
-                
-                <a href="signup" class="cta"><button>SIGN IN</button></a>
+                <a href="http://localhost:8501/" target="_blank"> <button>Assistant</button></a>
+             
             </ul>
         </div>
     </nav>
@@ -42,24 +42,8 @@
     <div id="two">
         <h2>THE MOST PREFERRED AND TRUSTED</h2>
         <h3>A one stop solution to tackle all your mental problems.</h3>
-    </div>
-    <section id="container">
-        <div id="box1" class="box">
-            <img src="./images/people.png" alt="" />
-            <h2>100,000+</h2>
-            <p>No. of people using SoulSupport to interact with each other</p>
-        </div>
-        <div id="box2" class="box">
-            <img src="./images/influencer.png" alt="" />
-            <h2>3000+</h2>
-            <p>Verified and trusted Influencers to guide the users</p>
-        </div>
-        <div id="box3" class="box">
-            <img src="./images/vc.png" alt="" />
-            <h2>425,000+</h2>
-            <p>No. of successful live sessions given</p>
-        </div>
-    </section>
+    </div>  
+    
     <div id="about">
         <h1>WHO WE ARE</h1>
         <p>
@@ -77,11 +61,7 @@
             is given the importance it deserves, and individuals feel supported and
             connected.
         </p>
-        <span class="butt" id="button" onclick="hre">LEARN MORE ABOUT US</span>
-        <script>
-            document.getElementById("button").addEventListener("click", function () { 
-                window.location.href = "knowmore.html"; 
-            });
+       
         </script>
     </div>
     <div id="namaste">
@@ -103,60 +83,8 @@
             </ul>
         </div>
     </footer>
+    
 
-    <!-- Chatbot icon -->
-    <div id="chatbot-icon"></div>
-
-    <!-- Chatbot container -->
-    <div id="chatbot-container">
-        <div id="chatbot-header">SoulSupport Chatbot</div>
-        <div id="chatbot-messages"></div>
-        <div id="chatbot-input">
-            <input type="text" id="user-input" placeholder="Type your message..." />
-            <button onclick="sendMessage()">Send</button>
-        </div>
-    </div>
-
-    <script>
-        document.getElementById('chatbot-icon').addEventListener('click', function() {
-            const chatbotContainer = document.getElementById('chatbot-container');
-            if (chatbotContainer.style.display === 'none' || chatbotContainer.style.display === '') {
-                chatbotContainer.style.display = 'flex';
-            } else {
-                chatbotContainer.style.display = 'none';
-            }
-        });
-
-        function sendMessage() {
-            const userInput = document.getElementById('user-input').value.trim();
-            if (userInput === '') return;
-
-            displayMessage('user', userInput);
-
-            fetch('/chat', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ message: userInput })
-            })
-            .then(response => response.json())
-            .then(data => {
-                displayMessage('bot', data.reply);
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                displayMessage('bot', 'Sorry, something went wrong.');
-            });
-
-            document.getElementById('user-input').value = '';
-        }
-
-        function displayMessage(sender, message) {
-            const messageContainer = document.createElement('div');
-            messageContainer.className = 'chatbot-message ' + (sender === 'user' ? 'user-message' : 'bot-message');
-            messageContainer.textContent = message;
-            document.getElementById('chatbot-messages').appendChild(messageContainer);
-            document.getElementById('chatbot-messages').scrollTop = document.getElementById('chatbot-messages').scrollHeight;
-        }
-    </script>
+    
 </body>
 </html>

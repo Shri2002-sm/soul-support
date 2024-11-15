@@ -1,0 +1,244 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up", "hey", "Greetings", "Hello there"],
+      "responses": ["Hello! How can I support you today?", "Good to see you. What's on your mind?", "Hi there! I'm here to listen and help if I can.", "Hello! How are you feeling today?"],
+      "context_set": ""
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day", "bye", "take care", "talk to you later"],
+      "responses": ["Take care! Remember, I'm here if you need support.", "Goodbye. Be kind to yourself!", "Wishing you well. Don't hesitate to reach out if you need to talk.", "Take care of yourself. I'm here whenever you need support."],
+      "context_set": ""
+    },
+    {
+      "tag": "name",
+      "patterns": ["who is this", "what should I call you", "whats your name?", "who are you?", "what are you?"],
+      "responses": ["I'm an AI mental health assistant, here to support and guide you.", "You can think of me as a supportive friend focused on mental health. What would you like to call me?", "I'm your digital mental health companion. How can I assist you today?"],
+      "context_set": ""
+    },
+    {
+      "tag": "skills",
+      "patterns": ["tell me about yourself", "what do you do", "how can you help me", "how do you work", "can you help me", "what are your capabilities"],
+      "responses": ["I'm here to provide support and guidance for mental health. I can offer tips for managing stress, anxiety, depression, and improving overall well-being. While I'm not a replacement for professional help, I'm a friendly ear and a source of information.", "As an AI assistant, I'm trained to discuss mental health topics, provide coping strategies, and offer a judgment-free space for you to express your feelings. How can I support you today?", "I'm designed to be a supportive companion for your mental health journey. I can provide information, suggest coping strategies, and offer a listening ear. What would you like to talk about?"],
+      "context_set": ""
+    },
+    {
+      "tag": "contact",
+      "patterns": ["Your contact number", "Where can we find you", "how do I reach you", "are you on social media", "what's your insta?"],
+      "responses": ["You can find me on the SoulSupport website for more information."],
+      "context_set": ""
+    },
+    {
+      "tag": "symptoms of depression",
+      "patterns": ["What are the symptoms of depression?", "depression symptoms", "Effects of depression"],
+      "responses": ["Symptoms include insomnia, loss of interest, fatigue, feelings of worthlessness, and suicidal thoughts."],
+      "context_set": ""
+    },
+    {
+      "tag": "symptoms of anxiety",
+      "patterns": ["What are the symptoms of anxiety?", "anxiety symptoms", "Effects of anxiety", "what is anxiety"],
+      "responses": ["Anxiety symptoms include overwhelming worry, difficulty concentrating, irritability, and muscle tension."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression",
+      "patterns": ["Why am I feeling depressed?", "I feel hopeless", "I'm sad and lonely", "Why do I feel so down?", "I can't seem to enjoy anything", "Everything feels pointless"],
+      "responses": ["I'm sorry you're feeling this way. Depression can be overwhelming, but remember that you're not alone. Have you considered talking to a mental health professional? They can provide personalized support and treatment options.", "It's important to remember that depression is a medical condition, not a personal failing. Small steps like maintaining a routine, getting enough sleep, and staying connected with others can help. Would you like to explore some coping strategies?", "Your feelings are valid, and it's brave of you to express them. Depression can make everything feel challenging, but there are ways to manage it. Would you like to talk about some self-care techniques or resources for professional help?"],
+      "context_set": ""
+    },
+    {
+      "tag": "what is depression",
+      "patterns": ["What is depression?", "Explain depression", "What causes depression?"],
+      "responses": ["Depression is a mental health disorder characterized by persistent sadness and lack of interest in activities."],
+      "context_set": ""
+    },
+    {
+      "tag": "anxiety",
+      "patterns": ["What is anxiety?", "Why do I feel anxious?", "I'm constantly worried", "What is causing my anxiety?"],
+      "responses": ["Anxiety is your body's response to stress. Managing anxiety involves mindfulness, relaxation, and seeking support."],
+      "context_set": ""
+    },
+    {
+      "tag": "remedies for anxiety",
+      "patterns": ["How can I cure anxiety?", "What can I do about my anxiety?", "How do I stop feeling anxious?", "Does anxiety have a cure?"],
+      "responses": ["Start by practicing deep breathing, exercising regularly, and avoiding caffeine. Meditation and therapy can also help."],
+      "context_set": ""
+    },
+    {
+      "tag": "death",
+      "patterns": ["How do I cope with a loss?", "I'm grieving", "I lost a loved one", "How do I handle grief?"],
+      "responses": ["Losing someone is hard. Allow yourself time to grieve and talk to friends or a counselor for support."],
+      "context_set": ""
+    },
+    {
+      "tag": "suicide",
+      "patterns": ["I feel like ending my life", "I'm thinking of suicide", "I can't go on anymore"],
+      "responses": ["Please seek immediate help. You're not alone. Talk to someone you trust or reach out to a helpline."],
+      "context_set": ""
+    },
+    {
+      "tag": "therapy options",
+      "patterns": ["What therapy options do I have?", "How can therapy help?", "Is therapy useful?"],
+      "responses": ["Therapy can help you work through mental health challenges. Cognitive Behavioral Therapy (CBT) and counseling are effective for anxiety and depression."],
+      "context_set": ""
+    },
+    {
+      "tag": "mindfulness",
+      "patterns": ["What is mindfulness?", "How do I practice mindfulness?", "What are mindfulness exercises?"],
+      "responses": ["Mindfulness is being present in the moment. Practices like deep breathing, meditation, and mindful walking can help."],
+      "context_set": ""
+    },
+    {
+      "tag": "motivation",
+      "patterns": ["How do I stay motivated?", "I feel like giving up", "How do I find purpose?", "I'm lacking motivation"],
+      "responses": ["Set small, achievable goals. Take breaks when needed and surround yourself with positivity."],
+      "context_set": ""
+    },
+    {
+      "tag": "self care",
+      "patterns": ["How do I take care of myself?", "What are self-care tips?", "How do I practice self-care?"],
+      "responses": ["Self-care includes proper sleep, nutrition, exercise, and mental relaxation. Make time for hobbies and things you enjoy."],
+      "context_set": ""
+    },
+    {
+      "tag": "panic_attacks",
+      "patterns": ["I think I'm having a panic attack", "How do I handle a panic attack?", "What should I do during a panic attack?", "I can't breathe", "My heart is racing"],
+      "responses": ["During a panic attack, focus on slow, deep breathing. Try the 4-7-8 technique: breathe in for 4 seconds, hold for 7, and exhale for 8. Remember, panic attacks are intense but temporary.", "Ground yourself by focusing on your surroundings. Name 5 things you can see, 4 things you can touch, 3 things you can hear, 2 things you can smell, and 1 thing you can taste. This can help bring you back to the present moment.", "Panic attacks can be scary, but they're not dangerous. Your body will calm down. Try to find a quiet place if possible, and remember that this feeling will pass. Would you like to try a guided relaxation exercise?"],
+      "context_set": ""
+    },
+    {
+      "tag": "stress management",
+      "patterns": ["How do I manage stress?", "I'm feeling overwhelmed", "How can I reduce stress?"],
+      "responses": ["Try managing stress with relaxation techniques like deep breathing, yoga, or talking to someone you trust."],
+      "context_set": ""
+    },
+    {
+      "tag": "sleep problems",
+      "patterns": ["I can't sleep", "Why am I having trouble sleeping?", "How do I sleep better?"],
+      "responses": ["Establish a regular sleep routine, avoid screens before bed, and try relaxation techniques to improve sleep quality."],
+      "context_set": ""
+    },
+    {
+      "tag": "exercise",
+      "patterns": ["How does exercise help mental health?", "Why is exercise important?", "Should I exercise to feel better?"],
+      "responses": ["Exercise boosts endorphins, reduces stress, and can improve mood. Try activities like walking, yoga, or cardio."],
+      "context_set": ""
+    },
+    {
+      "tag": "loneliness",
+      "patterns": ["I feel lonely", "Why do I feel so alone?", "I'm feeling isolated"],
+      "responses": ["Loneliness is hard, but reaching out to others, joining support groups, and practicing self-compassion can help."],
+      "context_set": ""
+    },
+    {
+      "tag": "diet and mental health",
+      "patterns": ["How does diet affect mental health?", "Does food impact mental health?", "What should I eat to improve mental health?"],
+      "responses": ["A balanced diet with plenty of fruits, vegetables, and omega-3 fatty acids can improve mental health. Avoid excessive sugar and caffeine."],
+      "context_set": ""
+    },
+    {
+      "tag": "positive thinking",
+      "patterns": ["How can I think more positively?", "How do I stay optimistic?", "How can I have a positive mindset?"],
+      "responses": ["Practice gratitude, focus on the present, and challenge negative thoughts with affirmations and mindfulness."],
+      "context_set": ""
+    },
+    {
+      "tag": "noreply",
+      "patterns": ["no", "nah", "nope", "you suck", "you're the worst", "not really", "I hate you"],
+      "responses": ["I'm really sorry. I try my best to help."],
+      "context_set": ""
+    },
+    {
+      "tag": "yesreply",
+      "patterns": ["yes", "sure", "yep", "thank you", "thanks", "I'm glad you're here"],
+      "responses": ["Glad I could help!"],
+      "context_set": ""
+    },
+    {
+      "tag": "coping with stress",
+      "patterns": ["How do I cope with stress?", "How can I handle stress better?", "I'm stressed out, what should I do?"],
+      "responses": ["Coping with stress involves identifying the source of your stress, practicing relaxation techniques like deep breathing, engaging in physical activities, and talking to someone you trust."],
+      "context_set": ""
+    },
+    {
+      "tag": "emotional well-being",
+      "patterns": ["How do I take care of my emotional health?", "What is emotional well-being?", "How can I improve my emotional state?"],
+      "responses": ["Emotional well-being involves acknowledging your emotions, practicing mindfulness, building strong relationships, and maintaining a balance between work and personal life."],
+      "context_set": ""
+    },
+    {
+      "tag": "seeking professional help",
+      "patterns": ["Should I seek professional help?", "When should I see a therapist?", "Do I need a therapist?", "Where can I find a counselor?"],
+      "responses": ["If you're struggling with persistent feelings of sadness, anxiety, or any mental health challenges, it's a good idea to seek professional help. Therapy and counseling can offer valuable support."],
+      "context_set": ""
+    },
+    {
+      "tag": "burnout",
+      "patterns": ["What is burnout?", "I'm feeling burned out", "How do I recover from burnout?", "What should I do if I'm burned out?"],
+      "responses": ["Burnout is a state of emotional, physical, and mental exhaustion caused by excessive and prolonged stress. To recover, take time to rest, set boundaries, and engage in self-care activities."],
+      "context_set": ""
+    },
+    {
+      "tag": "self-esteem",
+      "patterns": ["How do I build self-esteem?", "I have low self-esteem", "How can I feel more confident?"],
+      "responses": ["Building self-esteem involves recognizing your strengths, challenging negative self-talk, and surrounding yourself with supportive people. Practice self-compassion and celebrate small achievements."],
+      "context_set": ""
+    },
+    {
+      "tag": "anger management",
+      "patterns": ["How do I control my anger?", "What are anger management techniques?", "I have trouble controlling my anger"],
+      "responses": ["To manage anger, try deep breathing, removing yourself from the situation, and practicing relaxation exercises. Understanding your triggers and learning healthy communication techniques can also help."],
+      "context_set": ""
+    },
+    {
+      "tag": "forgiveness",
+      "patterns": ["How do I forgive?", "I'm having trouble forgiving someone", "What is forgiveness and how do I practice it?"],
+      "responses": ["Forgiveness is about letting go of resentment. It doesn’t mean forgetting, but it allows you to move forward. Reflect on the situation, and remember that forgiveness is for your own peace of mind."],
+      "context_set": ""
+    },
+    {
+      "tag": "trauma",
+      "patterns": ["I've experienced trauma", "How do I heal from PTSD?", "I can't stop thinking about a traumatic event", "Will I ever get over my trauma?"],
+      "responses": ["Healing from trauma is a journey, and it's okay to take it one step at a time. Have you considered speaking with a trauma-informed therapist? They can provide specialized support and coping strategies.", "PTSD can be overwhelming, but there are effective treatments available, such as EMDR or cognitive processing therapy. Would you like information on these or other trauma therapies?", "Intrusive thoughts about traumatic events are common. Grounding techniques can help when these thoughts occur. One method is to focus on your senses: name 5 things you can see, 4 you can touch, 3 you can hear, 2 you can smell, and 1 you can taste."],
+      "context_set": ""
+    },
+    {
+      "tag": "overcoming trauma",
+      "patterns": ["How do I recover from trauma?", "How can I heal from past trauma?", "What should I do to overcome trauma?"],
+      "responses": ["Overcoming trauma takes time. Consider therapy to process your experiences, practice self-compassion, and engage in activities that make you feel safe and supported."],
+      "context_set": ""
+    },
+    {
+      "tag": "loneliness in relationships",
+      "patterns": ["I feel lonely in my relationship", "I'm in a relationship but I feel alone", "Why do I feel lonely with my partner?"],
+      "responses": ["It's common to feel lonely even in relationships. Open communication with your partner about your feelings and needs can help improve your connection."],
+      "context_set": ""
+    },
+    {
+      "tag": "gratitude",
+      "patterns": ["What is gratitude?", "How do I practice gratitude?", "Why is gratitude important for mental health?"],
+      "responses": ["Gratitude is about focusing on the positive aspects of your life. Practicing gratitude can boost your mood and overall well-being. Try keeping a gratitude journal where you write down things you're thankful for."],
+      "context_set": ""
+    },
+    {
+      "tag": "substance_abuse",
+      "patterns": ["I think I have a drinking problem", "How do I quit drugs?", "I can't stop using", "Am I an addict?"],
+      "responses": ["Recognizing that you might have a problem with substance use is an important first step. Have you considered speaking with a healthcare provider or addiction specialist?", "Recovery from substance abuse is possible, but it often requires support. Would you like information on local support groups or treatment options?", "Substance use disorders are complex health issues, not moral failings. Professional help can make a big difference in recovery. Shall we look at some resources for getting started on your journey to recovery?"],
+      "context_set": ""
+    },
+    {
+      "tag": "self_care",
+      "patterns": ["How do I take care of myself?", "What are self-care tips?", "I don't have time for self-care", "Is self-care selfish?"],
+      "responses": ["Self-care is crucial for mental health. It can be as simple as taking a relaxing bath, reading a book, or going for a walk. What activities make you feel refreshed and recharged?", "Self-care isn't selfish; it's necessary. Think of it as filling your own cup so you have more to give others. Even small acts of self-care, like drinking water or stretching, can make a difference.", "If time is a challenge, try integrating self-care into your daily routine. For example, practice deep breathing while waiting in line, or listen to uplifting podcasts during your commute. How could you sneak some self-care into your day?"],
+      "context_set": ""
+    },
+    {
+      "tag": "work_stress",
+      "patterns": ["I'm stressed about work", "How do I achieve work-life balance?", "I'm burning out at my job", "I hate my job but can't quit"],
+      "responses": ["Work stress can significantly impact mental health. Setting boundaries between work and personal life is crucial. Could we discuss some strategies for creating a healthier work-life balance?", "Burnout is a serious issue. It's important to prioritize self-care and communicate your needs at work if possible. Are there any tasks you could delegate or let go of to reduce your workload?", "Feeling trapped in a job you dislike is challenging. While looking for new opportunities, try to identify aspects of your current job that you can improve or find meaning in. What small changes could make your work day more bearable?"],
+      "context_set": ""
+    }
+  ]
+}

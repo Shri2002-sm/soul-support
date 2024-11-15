@@ -8,6 +8,7 @@ body {
 .hero {
   background-image: url('https://img.freepik.com/free-photo/family-therapy-psychologist-office_23-2149175174.jpg?ga=GA1.1.424580486.1724000700&semt=ais_hybrid');
   background-size: cover;
+  background-size: 97%;
   background-position: center center;
   height: 600px; /* Adjust the height to show more of the image */
   display: flex;
